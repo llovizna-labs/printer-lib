@@ -1,0 +1,8 @@
+build/*
+*~
+.settings
+.c9*
+node_modules/*
+*.swp
+.DS_Store
+dl-releases.sh

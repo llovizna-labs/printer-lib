@@ -1,0 +1,29 @@
+{
+  "name": "pel-printer",
+  "version": "0.2.2",
+  "license": "BSD-2-Clause",
+  "main": "./lib/printer",
+  "description": "Node.js printer bindings",
+  "homepage": "git@github.com:llovizna-labs/printer-lib.git",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:llovizna-labs/printer-lib.git"
+  },
+  "devDependencies": {
+    "electron": "*",
+    "electron-rebuild": "*",
+    "grunt": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-node-gyp": "*",
+    "grunt-nw-gyp": "*",
+    "nodeunit": "*"
+  },
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "rebuild-x64": "node-gyp rebuild --target=1.4.1 --arch=x64 --dist-url=https://atom.io/download/atom-shell",
+    "rebuild-ia32": "node-gyp rebuild --target=1.4.1 --arch=ia32 --dist-url=https://atom.io/download/atom-shell"
+  }
+}
